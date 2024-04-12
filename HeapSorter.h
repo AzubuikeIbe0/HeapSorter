@@ -3,9 +3,14 @@
 #include <vector>
 #include <algorithm>
 #include <random>
+using namespace std;
 
 class HeapSorter {
-public:
-    static std::vector<int> sortRandomIntegers();
-};
+private:
+    static vector<int> generateRandomIntegers();
 
+public:
+    static vector<int> makeHeap();
+    static vector<int> sortRandomIntegers();
+  
+};
